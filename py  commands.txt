@@ -1,0 +1,5 @@
+py -m venv learning 
+
+The command py -m venv is used to create a virtual environment in Python.
+
+A virtual environment is like a separate workspace where you can install packages for one project without affecting other projects on your computer.

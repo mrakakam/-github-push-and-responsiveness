@@ -4,7 +4,25 @@ vanilla html and css
 
 /* 📱➡️💻 Medium screens (tablet) */ @media (min-width: 601px) and (max-width: 992px)
 
+/* Tablet screens */
+@media (min-width: 601px) and (max-width: 992px) {
+  /* your tablet-specific CSS here */
+}
+
+
+
 /* 💻 Large screens (desktop) */ @media (min-width: 993px)
+
+
+/* Mobile (portrait) */
+@media (max-width: 600px) {}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 992px) {}
+
+/* Laptop/Desktop */
+@media (min-width: 993px) {}
+
 
 
 

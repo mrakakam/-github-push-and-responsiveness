@@ -1,0 +1,58 @@
+⚙️ Step-by-step to run your Django server
+
+1. Make sure your virtual environment is active
+
+You should see something like this in your terminal:
+
+(learning) PS C:\Users\Admin\Documents\YourProject>
+
+
+If you don’t see (learning), activate it again:
+
+learning\Scripts\activate
+
+
+2. Run the server
+
+In your project folder (where manage.py is located), run:
+
+python manage.py runserver
+
+
+3. Check the output
+
+You’ll see something like this:
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 16, 2025 - 02:45:33
+Django version 5.x, using settings 'projectname.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+4. Open your site in a browser
+
+Go to:
+
+http://127.0.0.1:8000/
+
+
+or
+
+http://localhost:8000/
+
+
+You’ll see Django’s default “Congratulations!” page 🎉
+That means your project is running successfully.
+
+5.To stop the server
+
+Just press:
+
+Ctrl + C
+
+
+in your terminal.

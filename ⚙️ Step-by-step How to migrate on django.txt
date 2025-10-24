@@ -1,0 +1,58 @@
+⚙️ Step-by-step: How to migrate
+
+1. Make sure your virtual environment is active
+
+You should see something like:
+
+(learning) PS C:\Users\Admin\Documents\FunzoneEscort>
+
+
+If not, activate it:
+
+learning\Scripts\activate
+
+2. Go to your project folder (where manage.py is)
+
+For example:
+
+cd C:\Users\Admin\Documents\FunzoneEscort
+
+3. Run the first migrations (for Django’s built-in apps)
+
+Before you add your own models, run this to set up Django’s default database tables:
+
+python manage.py migrate
+
+
+✅ This will create your database file (db.sqlite3) and apply all default migrations for:
+
+Users & authentication
+
+Sessions
+
+Admin
+
+Content types, etc.
+
+4. Make migrations for your app
+
+If you have models in your app (like in posts/models.py), run:
+
+python manage.py makemigrations
+
+
+This tells Django:
+
+“Look at my models and prepare migration files for the database.”
+
+You’ll see something like:
+
+Migrations for 'posts':
+  posts/migrations/0001_initial.py
+    - Create model Post
+
+5. Apply those migrations (update the database)
+python manage.py migrate
+
+
+This will now apply the new migrations to your database — actually creating the tables.
